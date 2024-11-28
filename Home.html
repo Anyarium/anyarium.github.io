@@ -3,7 +3,7 @@
 <link rel="icon" href="file:///U|/personal intrest/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="file:///U|/personal intrest/favicon.ico" type="image/x-icon">
 <title>Bird Encyclopedia | Explore a variety of bird fauna from around the world</title>
-<meta charset="utf-8">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
 <style type="text/css">
 body,td,th { font-family: "Agency FB";
     color: #ededed;}
@@ -17,6 +17,10 @@ h1 { color: #fafafa;}
   overflow: hidden;
   background-color: #274e13;
   padding: 10px;
+display:flex;
+justify-content: center;
+	align-items: center;
+	text-align: center;
 		
 
 }
@@ -29,7 +33,7 @@ h1 { color: #fafafa;}
   float: left;
   text-align: center;
   padding: 5px;
-
+width: 100%
   font-size: 18px; 
   line-height: 10px;
   border-radius: 4px;
@@ -48,11 +52,7 @@ float: left;
  padding: 5px 5px 5px 5px;
 }
 
-@media screen and (max-width: 700px) {
-
-  }
-}
-a:link {
+:link {
  text-decoration: none;
 }
 
@@ -96,7 +96,9 @@ padding: 5px;
 	.qricondiv:hover .closebutton {
   display: block;
 }
-button{
+
+
+	.button{
 	background: none;
 	color: inherit;
 	border: none;
@@ -106,26 +108,35 @@ button{
 	outline: inherit;
 }
 	
+@media screen and (max-width: 599px) {
+   .hideme {
+    display: none;
+  }
+	}
+	@media screen and (min-width: 599px) {
+   .hideme {
+    display: block;
+  }
+	}
+	
+
 </style></head>
 	<body link="#ededed" vlink="#ededed" alink="#ededed" leftmargin="50" topmargin="15" bgcolor="#2A241D">
 <!-- Header start -->
 <div class="header">
-	<div class="header-left"><a href="file:///U|/personal intrest/Home.html"><img src="docs/House.png" width="24" height="24" alt=""><b>Anyarium</b></a></div>
+	<div class="header-left"><a href="file:///U|/personal intrest/Home.html"><img src="docs/House.png" width="24" height="24" alt=""><b><div class="hideme">Anyarium</div></b></a></div>
 	
 	
-	<div class="header-right"><a href="file:///U|/personal intrest/You.html"><img src="docs/Book.png" width="24" height="24" alt="">LORE</a></div>	
-	<div class="header-right"><a href="file:///U|/personal intrest/You.html"><img src="docs/Arrows.png" width="24" height="24" alt=""> Instructions</a></div>
+	<div class="header-right"><a href="file:///U|/personal intrest/You.html"><img src="docs/Book.png" width="24" height="24" alt=""><div class="hideme">LORE</div></a></div>	
+	<div class="header-right"><a href="file:///U|/personal intrest/You.html"><img src="docs/Arrows.png" width="24" height="24" alt=""><div class="hideme"> Instructions</div></a></div>
 	
 	<div class="header-right">
-	<div class="qricondiv">
- 	 <img src="docs/QR.png" alt="Open QR Code" width="24" height="24">
- 	 <div class="qricondiv-content"> 
- 	 <img src="file:///U|/personal intrest/BirdQR.png" alt="QR Code" width="200" height="200" border="5">
+	<div class="qricondiv"><img src="docs/QR.png" alt="Open QR Code" width="24" height="24"><div class="hideme">QR for this page</div><div class="qricondiv-content">  <img src="file:///U|/personal intrest/BirdQR.png" alt="QR Code" width="200" height="200" border="5">
 	
 
 	  </div>
 	</div>
-	</div><!-- <div class="header-right"><a><img src="Circle2.png" alt="" height="24px" width="24px"></a></div> -->
+	</div>
 		
 </div>
 
@@ -147,5 +158,4 @@ button{
   <a href="file:///U|/personal intrest/Home.html">© Anyarium 2024-25</a></p>
 	
 	
-
 </body></html>
