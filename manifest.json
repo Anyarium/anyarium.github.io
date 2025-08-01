@@ -1,9 +1,9 @@
 {
   "name": "Anyarium",
   "short_name": "Anyarium",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "theme_color": "#93c47d",
+  "background_color": "#091304",
   "display": "standalone",
   "scope": "https://anyarium.github.io",
-  "start_url": "https://anyarium.github.io/Anyarium/Home.html"
+  "start_url": "https://anyarium.github.io"
 }
